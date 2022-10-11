@@ -1,0 +1,104 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "author": "Maria Garcia",
+            "title": "The Silent History",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-R7HN-jumbo-v2-330x427.jpg",
+            "price": "24.00",
+            "category": "HISTORY",
+            "description": "In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald's life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 2,
+            "title": "A Girl Is a Half-Formed Thing",
+            "author": "Maria Garcia",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-BLZC-jumbo-v2-330x427.jpg",
+            "price": "15.00",
+            "category": "ROMANCE, TEENS",
+            "description": "In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald’s life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 3,
+            "title": "Into the War",
+            "author": "Maria Garcia",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-ES87-jumbo-v2-330x427.jpg",
+            "price": "12.50",
+            "category": "HISTORY",
+            "description": "In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald’s life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 4,
+            "title": "All Our Names",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-OCFB-jumbo-v2-330x427.jpg",
+            "price": "15.00",
+            "category": "LITERATURE",
+            "description": "In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald’s life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 5,
+            "title": "Your Face in Mine",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-7XZL-jumbo-v2-330x427.jpg",
+            "price": "29.00",
+            "category": "LITERATURE",
+            "description": "In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald’s life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 6,
+            "title": "Can’t and Won’t",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-RL41-jumbo-v2-1-330x427.jpg",
+            "price": "19.00",
+            "category": "FANTASY",
+            "description":"In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald's life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 7,
+            "title": "The Beauty and The Beast",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/koveri-330x427.png",
+            "price": "28.00",
+            "category": "FANTASY",
+            "description" :"In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald's life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 8,
+            "title": "The Casual Optimist",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-GP9S-jumbo-v2-330x427.jpg",
+            "price": "19.00",
+            "category": "BUSINESS",
+            "description": "In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald's life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 9,
+            "title": "American Fun",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-TLYR-jumbo-v2-330x427.jpg",
+            "price": "45.00",
+            "category": "HEALTH, TEENS",
+            "description": "In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald's life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 10,
+            "title": "Never Love a Gambler",
+            "author": "Maria Garcia",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-ZLA1-jumbo-v2-330x427.jpg",
+            "price": "21.00",
+            "category": "ROMANCE",
+            "description": "In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald's life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 11,
+            "title": "Colorless Tsukuru",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-175P-jumbo-v2-330x427.jpg",
+            "price": "34.00",
+            "category": "FANTASY, LITERATURE",
+            "description": "In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald's life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        },
+        {
+            "id": 12,
+            "title": "Silence Once Begun",
+            "image": "https://themes.laborator.co/aurum/bookshop/wp-content/uploads/2015/01/14BESTCOVERS-slide-9THC-jumbo-v2-330x427.jpg",
+            "price": "29.00",
+            "category": "FANTASY, LITERATURE",
+            "description": "In 1937, F. Scott Fitzgerald was a troubled, uncertain man whose literary success was long over. In poor health, with his wife consigned to a mental asylum and his finances in ruins, he struggled to make a new start as a screenwriter in Hollywood. By December 1940, he would be dead of a heart  attack.Those last three years of Fitzgerald's life, often obscured by the legend of his earlier Jazz Age glamour, are the focus of Stewart O’Nan’s gorgeously and gracefully written novel. With flashbacks to key moments from Fitzgerald’s past, the story follows him as he arrives on the MGM lot, falls in love with brassy gossip columnist Sheilah Graham, begins work on The Last Tycoon, and tries to maintain a semblance of family life with the absent Zelda and daughter, Scottie."
+        }
+    ]
+}

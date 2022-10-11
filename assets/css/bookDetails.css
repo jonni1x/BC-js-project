@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Lato:wght@300;400;700&family=Oswald:wght@200;300;400;500;700&display=swap');
+@import url('/assets/css/navbar.css');
+@import url('/assets/css/footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --cream-clr: #DCBE87;
+    --darkGreen: #325453;
+    --light-pink: #EF5D58;
+    --light-brown: #AD6A34;
+    --dark-brown: #4E1D04;
+
+    /* Font Family */
+    --cinzel: 'Cinzel', serif;
+    --lato: 'Lato', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 200px;
+    font-family: var(--oswald);
+}
+
+main .book-content {  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+main .book-content .about-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
+    max-height: 500px;
+    height: 400px;
+}
+
+main .book-content .about-book p:nth-child(3) {
+    font-size: 1.4rem;
+    color: var(--darkGreen);
+}
+
+main .book-content .about-book span {
+    font-size: 1.2rem;
+}

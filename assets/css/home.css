@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Lato:wght@300;400;700&family=Oswald:wght@200;300;400;500;700&display=swap');
+@import url('/assets/css/navbar.css');
+@import url('/assets/css/footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --cream-clr: #DCBE87;
+    --darkGreen: #325453;
+    --light-pink: #EF5D58;
+    --light-brown: #AD6A34;
+    --dark-brown: #4E1D04;
+
+    /* Font Family */
+    --cinzel: 'Cinzel', serif;
+    --lato: 'Lato', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+}
+
+.slider {
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--darkGreen);
+}
+
+.slider .slider-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.slider .slider-container .image {
+    width: 99vw;
+    max-width: 98.9vw;
+    height: 92vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.slider .slider-container iconify-icon {
+    font-size: 3rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+.slider .slider-container iconify-icon:first-child {
+    left: 20px;
+}
+
+.slider .slider-container iconify-icon:last-child {
+    right: 20px;
+}
+
+.slider .dots {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 30px auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    z-index: 9999;
+}
+
+.slider .dots span{
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.bestSellers {
+    background: var(--light-pink);
+    height: 80vh;
+    font-family: var(--oswald);
+}
+
+.bestSellers div:first-child {
+    padding: 80px 200px;
+}
+
+.bestSellers div:first-child h2 {
+    font-size: 2.2rem;
+}
+
+.bestSellers div:first-child span {
+    font-size: 1.2rem;
+}
+
+.bestSellers .books {
+    width: 80% !important;
+    height: 400px !important;
+    margin: 0 auto;
+    padding-left: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.bestSellers .books::-ms-thumb {
+    background-color: red;
+    color: red;
+}
+
+.bestSellers .books iconify-icon {
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.bestSellers .books .book {
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.bestSellers .books .book img {
+    height: 300px;
+}
+
+section.author-of-month {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 170px;
+    font-family: var(--cinzel);
+    min-height: 708px;
+    background-color: white;
+}
+
+section.author-of-month .image img {
+    height: 550px;
+    margin-top: 20px;
+}
+
+section.author-of-month .description {
+    max-height: 40%;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.author-of-month .description * {
+    margin: 7px 0;
+}
+
+section.author-of-month .description .books {
+    width: 790px;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.author-of-month .description .books .book {
+    width: 180px;
+    cursor: pointer;
+}
+
+section.author-of-month .description .books .book span {
+    font-weight: 700;
+}
+
+section.author-of-month .description .books img {
+    height: 200px;
+    width: 150px;
+    margin: 40px 0 0 0;
+}
+
+.free-shipping {
+    font-family: var(--lato);
+    margin: 160px auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    border: 1px solid var(--light-brown);
+    color: rgb(163, 163, 163);
+}
+
+.free-shipping button {
+    font-family: var(--oswald);
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.free-shipping button:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 200px;
+    width: 80%;
+}
+
+.row div {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--darkGreen);
+    font-family: var(--cinzel);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.row div h3,span {
+    z-index: 90;
+}
+
+.row div img {
+    height: 250px;
+    position: absolute;
+    transition: .4s;
+}
+
+.row div img:hover{
+    transform: scale(1.05);
+}
+
+section.feedbacks {
+    height: 50vh;
+    background: var(--cream-clr);
+    position: relative;
+    font-family: var(--oswald);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.feedbacks .feedback {
+    display: flex;
+    align-items: center;
+}
+
+section.feedbacks .feedback div {
+    margin-left: 30px;
+    max-width: 70%;
+}
+
+section.feedbacks .feedback img {
+    border-radius: 100%;
+}
+
+section.feedbacks .feedback div p {
+    font-size: 1.3rem;
+}
+
+section.feedbacks h2 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+
+section.feedbacks .feedbacks-dots {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 160px;
+}
+
+section.feedbacks .feedbacks-dots span {
+    display: block;
+    height: 15px;
+    width: 15px;
+    background-color: lightgray;
+    border-radius: 50px;
+}
+
+section.feedbacks .feedbacks-dots span.active {
+    background-color: black;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    section.author-of-month {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 100px;
+        font-family: var(--cinzel);
+        min-height: 708px;
+        background-color: white;
+    }
+    
+    section.author-of-month .image img {
+        height: 650px;
+        margin-top: 20px;
+    }
+    
+    section.author-of-month .description {
+        padding: 200px 0 0;
+        min-height: 40%;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    section.author-of-month .description * {
+        margin: 7px 0;
+    }
+    
+    section.author-of-month .description .books {
+        max-width: 613px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section.author-of-month .description .books .book {
+        width: 200px;
+        cursor: pointer;
+    }
+    
+    section.author-of-month .description .books .book span {
+        font-weight: 700;
+    }
+    
+    section.author-of-month .description .books img {
+        height: 150px;
+        width: 130px;
+        margin: 40px 0 0 0;
+    }
+}   

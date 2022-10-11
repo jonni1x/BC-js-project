@@ -1,0 +1,70 @@
+@import url('/assets/css/navbar.css');
+@import url('/assets/css/footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Lato:wght@300;400;700&family=Oswald:wght@200;300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --cream-clr: #DCBE87;
+    --darkGreen: #325453;
+    --light-pink: #EF5D58;
+    --light-brown: #AD6A34;
+    --dark-brown: #4E1D04;
+
+    /* Font Family */
+    --cinzel: 'Cinzel', serif;
+    --lato: 'Lato', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+}
+
+section.books {
+    height: 100%;
+    padding: 100px;
+    background: var(--cream-clr);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.books .book {
+    height: 350px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--darkGreen);
+    margin: 100px 0 0 100px;
+    pointer-events: none;
+}
+
+section.books .book .img {
+    height: 230px;
+    width: 230px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+section.books .book h4 {
+    font-size: 1.2rem;
+    font-family: var(--oswald);
+}
+
+section.books .book div * {
+    font-size: 1.1rem;
+    font-family: var(--oswald);
+    margin: 0 20px;
+}
+
+section.books .book .add-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    pointer-events: all;
+}

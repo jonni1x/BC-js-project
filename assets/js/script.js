@@ -1,11 +1,9 @@
-import Slider from './Slider.js';
 import Search from './SearchBar.js';
 
-const sliderBooks = [
-    '/assets/images/sliderImg1.jpg',
-    '/assets/images/sliderImg2.jpg',
-    '/assets/images/sliderImg3.jpg'
-];
+document.addEventListener('DOMContentLoaded', () => {
+    FetchBooks('http://localhost:8000/books');
+})
+
 const feedBacksArr = [
     {
         "image": "/assets/images/feedBackImg1.jpg",
@@ -29,7 +27,6 @@ const feedBacksArr = [
     }
 ]
 
-Slider(sliderBooks)
 Search();
 
 function bookDetails(id) {
@@ -40,7 +37,7 @@ function bookDetails(id) {
 const FetchBooks = async (url) => {
     const res = await fetch(url);
     const data = await res.json();
-    const booksSection = document.querySelector('.books')
+    const booksSection = document.querySelector('.swiper .swiper-wrapper')
 
     let arr = data.filter(book => book.author == 'Maria Garcia');
     addBestAuthorBooks(arr);
@@ -48,8 +45,7 @@ const FetchBooks = async (url) => {
     data.forEach(book => {
         const { id, title, image, price, category, description} = book;
         const bookCard = document.createElement('div');
-        bookCard.classList.add('book');
-
+        bookCard.classList.add('swiper-slide');
         
         bookCard.innerHTML = `
                 <img src=${image} alt=${title} class="img"/>
@@ -58,13 +54,11 @@ const FetchBooks = async (url) => {
                 <h4>€${price}</h4>
         `;
 
-        bookCard.addEventListener('click', () => bookDetails(id))
-
+        bookCard.addEventListener('click', () => bookDetails(id));
+        console.log(bookCard)
         booksSection.appendChild(bookCard)
     })
 } 
-
-FetchBooks('http://localhost:8000/books')
 
 const addBestAuthorBooks = (bestAuthorBooks) => {
     const books = document.querySelector('.author-of-month .books');
@@ -83,7 +77,8 @@ const addBestAuthorBooks = (bestAuthorBooks) => {
         `
         book.addEventListener('click', () => bookDetails(id));
 
-        books.appendChild(book)
+        books.appendChild(book);
+        
     })
 }
 
@@ -115,13 +110,38 @@ feedBack()
 const menu = () => {
     const menuBtn = document.querySelector('nav .burger-menu');
     const navLinks = document.querySelector('nav ul');
-
-    menuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        menuBtn.classList.toggle('active');
-    })
+    
+    if(menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        })
+    }
 };
 
 menu();
+
+const swiper = () => {
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
+
+swiper();
+
+
+
+
 
 export default bookDetails;

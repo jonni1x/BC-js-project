@@ -2,7 +2,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 100px 0;
+    gap: 20px;
     font-family: var(--lato);
     background: var(--dark-brown);
 }
@@ -28,3 +30,4 @@ footer ul li a {
 footer ul li a:hover {
     color: lightgray;
 }
+

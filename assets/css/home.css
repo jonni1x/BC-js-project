@@ -25,60 +25,22 @@
 .slider {
     height: 92vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    background-color: var(--darkGreen);
-}
-
-.slider .slider-container {
-    margin: 0 auto;
-    display: flex;
     align-items: center;
+    background-color: var(--darkGreen);
+    background: url('/assets/images/sliderImg1.jpg');
+    background-size: cover;
+    max-width: 99vw;
+    background-attachment: fixed ;
 }
 
-.slider .slider-container .image {
-    width: 99vw;
-    max-width: 98.9vw;
-    height: 92vh;
-    object-fit: cover;
-    position: relative;
-    z-index: 0;
-}
-
-.slider .slider-container iconify-icon {
+.slider h1 {
     font-size: 3rem;
-    cursor: pointer;
-    position: absolute;
-    z-index: 10;
+    width: 40%;
+    text-align: center;
     color: white;
-}
-
-.slider .slider-container iconify-icon:first-child {
-    left: 20px;
-}
-
-.slider .slider-container iconify-icon:last-child {
-    right: 20px;
-}
-
-.slider .dots {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    margin: 30px auto;
-    cursor: pointer;
-    position: absolute;
-    bottom: 0;
-    left: 45%;
-    z-index: 9999;
-}
-
-.slider .dots span{
-    display: block;
-    height: 15px;
-    width: 15px;
-    background-color: white;
-    border-radius: 50px;
+    font-family: var(--cinzel);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 
 .bestSellers {
@@ -99,37 +61,34 @@
     font-size: 1.2rem;
 }
 
-.bestSellers .books {
-    width: 80% !important;
-    height: 400px !important;
+/* .bestSellers .books {
     margin: 0 auto;
-    padding-left: 100px;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-y: hidden;
-    overflow-x: scroll;
-}
+} */
 
-.bestSellers .books::-ms-thumb {
-    background-color: red;
-    color: red;
-}
+.swiper {
+    width: 40%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
 
-.bestSellers .books iconify-icon {
-    position: absolute;
-    font-size: 3rem;
+.swiper .swiper-slide {
     cursor: pointer;
 }
 
-.bestSellers .books .book {
-    margin-left: 100px;
-    cursor: pointer;
+.swiper .swiper-slide .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.bestSellers .books .book img {
+.swiper .swiper-slide img {
     height: 300px;
+    width: 300px;
 }
 
 section.author-of-month {
@@ -160,10 +119,8 @@ section.author-of-month .description * {
 }
 
 section.author-of-month .description .books {
-    width: 790px;
-    max-width: 800px;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: scroll;
 }
 
 section.author-of-month .description .books .book {
@@ -211,11 +168,12 @@ section.author-of-month .description .books img {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto 200px;
-    width: 80%;
+    max-width: 80%;
+    flex-wrap: wrap;
 }
 
 .row div {
-    width: 300px;
+    width: 320px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -226,13 +184,9 @@ section.author-of-month .description .books img {
     font-weight: 700;
 }
 
-.row div h3,span {
-    z-index: 90;
-}
-
 .row div img {
     height: 250px;
-    position: absolute;
+    width: 320px;
     transition: .4s;
 }
 
@@ -297,53 +251,40 @@ section.feedbacks .feedbacks-dots span.active {
 }
 
 @media only screen and (max-width: 1400px) {
-
     section.author-of-month {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
         padding: 0 100px;
-        font-family: var(--cinzel);
-        min-height: 708px;
-        background-color: white;
     }
-    
+}   
+
+@media only screen and (max-width: 1200px) {
+    section.author-of-month {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    section.author-of-month {
+        flex-direction: column;
+    }
+
     section.author-of-month .image img {
-        height: 650px;
+        height: 550px;
+        width: 500px;
+        max-width: 500px;
+        object-fit: contain;
         margin-top: 20px;
     }
     
-    section.author-of-month .description {
-        padding: 200px 0 0;
-        min-height: 40%;
-        max-width: 50%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .row div {
+        width: 100%;
+        margin: 0 auto;
     }
-    
-    section.author-of-month .description * {
-        margin: 7px 0;
-    }
-    
-    section.author-of-month .description .books {
-        max-width: 613px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    section.author-of-month .description .books .book {
-        width: 200px;
-        cursor: pointer;
-    }
-    
-    section.author-of-month .description .books .book span {
-        font-weight: 700;
-    }
-    
-    section.author-of-month .description .books img {
-        height: 150px;
-        width: 130px;
-        margin: 40px 0 0 0;
-    }
-}   
+}
+
+
+
+

@@ -15,7 +15,6 @@ const Products = async() => {
         const { id, title, image, price, category, description} = book;
         const card = document.createElement('div');
         card.classList.add('book');
-        
         card.innerHTML = `
                 <img src=${image} alt=${title} class="img"/>
                 <h4>${title}</h4>

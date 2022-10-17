@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -38,16 +39,7 @@
 
     <!-- SLIDER -->
     <section id="slider" class="slider">
-        <div class="slider-container">
-            <iconify-icon icon="akar-icons:chevron-left" class="left"></iconify-icon>
-            <img src="/assets/images/sliderImg3.jpg" class="image">
-            <iconify-icon icon="ant-design:right-outlined" class="right"></iconify-icon>
-        </div>
-        <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <h1>“A reader lives a thousand lives before he dies . . . ...</h1>
     </section>
 
 
@@ -57,10 +49,19 @@
             <span>Top selling books of 2022</span>
         </div>
         
-        <div class="books">
-            <!-- <iconify-icon icon="akar-icons:circle-chevron-left-fill" class="left"></iconify-icon>
-            <iconify-icon icon="akar-icons:circle-chevron-right-fill" class="right"></iconify-icon> -->
-        </div>
+        <!-- <div class="books"> -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+            </div>
+        <!-- </div> -->
     </section>
 
 
@@ -178,5 +179,6 @@
         </ul>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script type="module" src="/assets/js/script.js"></script>
 </html>

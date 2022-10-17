@@ -97,7 +97,7 @@ nav ul li span {
     color: white;
     font-size: 1.1rem;
     top: 20px;
-    right: 140px;
+    right: 370px;
     background-color: black;
     width: 20px;
     height: 20px;
@@ -234,4 +234,20 @@ nav .cart-elements .cart .quantity {
         left: 130px;
         width: 260px;
     }
+    
 }
+
+
+@media only screen and (max-width: 1200px) {
+    nav ul li span {
+        right: 160px;
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    nav ul li span {
+        right: 240px;
+    }
+}
+

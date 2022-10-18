@@ -55,7 +55,7 @@ const FetchBooks = async (url) => {
         `;
 
         bookCard.addEventListener('click', () => bookDetails(id));
-        console.log(bookCard)
+        
         booksSection.appendChild(bookCard)
     })
 } 

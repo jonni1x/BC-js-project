@@ -1,9 +1,10 @@
 import navBar from "./navBar.js";
-import bookDetails from './script.js';
-import Search from './SearchBar.js';
+//import bookDetails from './script.js';
+//import Search from './SearchBar.js';
 
+// navBar();
+//Search();
 navBar();
-Search()
 
 const Products = async() => {
 
@@ -12,7 +13,7 @@ const Products = async() => {
     const res = await fetch('http://localhost:8000/books');
     const data = await res.json();
     data.forEach(book => {
-        const { id, title, image, price, category, description} = book;
+        const { id, title, image, price, category} = book;
         const card = document.createElement('div');
         card.classList.add('book');
         card.innerHTML = `
@@ -43,21 +44,16 @@ const addToCart = (image, title, price) => {
     const cartEls = document.querySelector('nav .cart-elements');
     const elements = cartEls.querySelectorAll('.cart');
 
-    let preQuantity = parseInt(cartQuantity.textContent);
-    preQuantity += 1;
-    cartQuantity.textContent = preQuantity;
-
+    cartQuantity.textContent = elements.length + 1;
+    console.log(title)
     elements.forEach(el => {
-        let elTitle = el.querySelector('h5').textContent;
-
-        if(elTitle == title) {
-            alert('book is in card');
+        const elTitle = el.querySelector('h5');
+        if(elTitle.textContent == title) {
+            alert('book is already on the cart');
             el.remove();
-            preQuantity -= 1;
-            cartQuantity.textContent = preQuantity;
+            cartQuantity.textContent = elements.length;
         }
-    });
-
+    })
 
     const div = document.createElement('div');
     div.classList.add("cart");
@@ -78,6 +74,10 @@ const addToCart = (image, title, price) => {
 }
 
 const deleteCart = (e) => {
+    const elements = document.querySelectorAll('nav .cart-elements .cart');
+    let cartQuantity = document.querySelector('nav ul li span');
+    cartQuantity.textContent = elements.length - 1;
+
     e.target.parentElement.remove();
     updateTotal()
 }
@@ -98,3 +98,16 @@ const updateTotal = () => {
     cartTotal.innerHTML = `${preTotal.toFixed(2)}&#x20AC;`
 }
 
+const menu = () => {
+    const menuBtn = document.querySelector('nav .burger-menu');
+    const navLinks = document.querySelector('nav ul');
+    
+    if(menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        })
+    }
+};
+
+menu()
